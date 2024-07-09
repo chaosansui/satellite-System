@@ -1,0 +1,74 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.16.27026.1 (7d3acc84).
+//
+// d:\dev\r_stk_prod_x64\source\lib\release.x64\tlhbuilder\aggatorplugin.tlh
+//
+// C++ source equivalent of type library AgGatorPlugin.tlb
+// compiler-generated file created 03/29/19 at 20:37:36 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("7af6dbcb-60f5-4d1e-99c1-e9c97d939d2e"))
+/* LIBID */ __AgGatorPlugin;
+struct /* coclass */ AgGatorConfiguredCalcObject;
+struct __declspec(uuid("6ae7ef38-51e3-4a5a-88dc-7ae3a200ad31"))
+/* dual interface */ IAgGatorConfiguredCalcObject;
+struct /* coclass */ AgGatorPluginProvider;
+struct __declspec(uuid("4e0c33a8-25a9-4ae2-bd33-fc086ef3979d"))
+/* dual interface */ IAgGatorPluginProvider;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IAgGatorConfiguredCalcObject, __uuidof(IAgGatorConfiguredCalcObject));
+_COM_SMARTPTR_TYPEDEF(IAgGatorPluginProvider, __uuidof(IAgGatorPluginProvider));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("8708a837-8fbd-4e8c-a6ad-8bd2e6d3d76a"))
+AgGatorConfiguredCalcObject;
+    // [ default ] interface IAgGatorConfiguredCalcObject
+
+struct __declspec(uuid("6ae7ef38-51e3-4a5a-88dc-7ae3a200ad31"))
+IAgGatorConfiguredCalcObject : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Evaluate (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[out,retval]*/ double * pValue ) = 0;
+};
+
+struct __declspec(uuid("d0dad328-8133-42de-96be-44a44ca9e1c0"))
+AgGatorPluginProvider;
+    // [ default ] interface IAgGatorPluginProvider
+
+struct __declspec(uuid("4e0c33a8-25a9-4ae2-bd33-fc086ef3979d"))
+IAgGatorPluginProvider : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ConfigureCalcObject (
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ struct IAgGatorConfiguredCalcObject * * CalcObject ) = 0;
+};
+
+#pragma pack(pop)
