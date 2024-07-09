@@ -1,0 +1,1719 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.16.27026.1 (73f8d462).
+//
+// d:\dev\r_stk_prod_x64\source\lib\release.x64\tlhbuilder\agcrdnplugin.tlh
+//
+// C++ source equivalent of type library AgCrdnPlugin.tlb
+// compiler-generated file created 03/29/19 at 20:37:36 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//  #import "D:\Dev\R_STK_prod_x64\Source\bin\Release.x64\AgAsHpopPlugin.DLL"
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("11b1b55b-d1d3-4e44-a737-7b050abe3adb"))
+/* LIBID */ __AgCrdnPlugin;
+struct __declspec(uuid("e3586fd7-2fa0-4457-a0a9-d163ccd1c8a8"))
+/* interface */ IAgCrdnAxesPlugin;
+struct __declspec(uuid("dbfdd0c5-0f8b-4e2e-baa0-38bb6ca4cd69"))
+/* dual interface */ IAgCrdnAxesPluginResultReg;
+struct __declspec(uuid("8544b432-172c-420a-b0d0-0bd7958a67a1"))
+/* dual interface */ IAgCrdnAxesPluginResultReset;
+struct __declspec(uuid("f5373cd2-6aaf-48ab-b199-e170ad72d643"))
+/* dual interface */ IAgCrdnPluginProvider;
+struct __declspec(uuid("2abb252c-9ffa-4f2b-bf41-4cc3a4e4df84"))
+/* dual interface */ IAgCrdnConfiguredVector;
+struct __declspec(uuid("3f126133-81a4-4126-95b5-3f832eb3d2a8"))
+/* dual interface */ IAgCrdnConfiguredVectorWithRate;
+struct __declspec(uuid("05d845f4-4c85-4e09-b03d-791ff9f130ee"))
+/* dual interface */ IAgCrdnConfiguredAxes;
+struct __declspec(uuid("5b2f635e-140b-435c-8b39-cf0be6d11c79"))
+/* dual interface */ IAgCrdnConfiguredAxesWithRate;
+struct __declspec(uuid("1e5501ef-c66b-43ed-bd34-bfe573a36d3a"))
+/* dual interface */ IAgCrdnConfiguredAngle;
+struct __declspec(uuid("933c8f8c-9d24-4b77-9f67-4db1ab2725ea"))
+/* dual interface */ IAgCrdnConfiguredAngleWithRate;
+struct __declspec(uuid("186c9b1e-c3b1-4222-a05e-9177ab68ff69"))
+/* dual interface */ IAgCrdnConfiguredPoint;
+struct __declspec(uuid("0e587016-a94b-4919-be0e-affdb53d4833"))
+/* dual interface */ IAgCrdnConfiguredPointWithRate;
+struct __declspec(uuid("58b4303a-78bd-4715-a91f-ed28dba1f32c"))
+/* dual interface */ IAgCrdnConfiguredSystem;
+struct __declspec(uuid("01d0aec2-16cd-4bfd-b964-b420f66fbc35"))
+/* dual interface */ IAgCrdnConfiguredSystemWithRate;
+struct __declspec(uuid("a429efee-1973-4c8d-b35c-7bc629a2a75a"))
+/* dual interface */ IAgCrdnPluginCalcProvider;
+struct __declspec(uuid("8129f3fc-a2c2-4671-b026-f4a36794cb9c"))
+/* dual interface */ IAgCrdnConfiguredCalcScalar;
+struct __declspec(uuid("e8e2a828-56a7-4c0b-88e2-ff96268311be"))
+/* dual interface */ IAgCrdnConfiguredCalcScalarWithRate;
+struct __declspec(uuid("f1b9b070-e89d-4b2b-bc10-a0976da08f32"))
+/* dual interface */ IAgCrdnConfiguredCalcParameterSet;
+struct __declspec(uuid("57516be0-2ec5-4e0b-94da-ffee2906d418"))
+/* dual interface */ IAgCrdnConfiguredCalcParameterSetWithRate;
+struct __declspec(uuid("e4707cdd-e425-40e1-af3d-d6c22b36b71b"))
+/* dual interface */ IAgCrdnAxesPluginResultEval;
+enum AgECrdnEulerSequence;
+struct __declspec(uuid("ae857a22-bbf4-44c9-84d4-0e1abc461cbd"))
+/* interface */ IAgCrdnPointPlugin;
+struct __declspec(uuid("293955b9-7601-4791-98c4-1fe0cc7b1d2c"))
+/* dual interface */ IAgCrdnPointPluginResultReg;
+struct __declspec(uuid("13d01153-a788-46c3-8045-bc38f8c8d385"))
+/* dual interface */ IAgCrdnPointPluginResultReset;
+struct __declspec(uuid("b4fa32ea-53dd-4a97-a497-c2d97a631933"))
+/* dual interface */ IAgCrdnPointPluginResultEval;
+struct __declspec(uuid("59b40cf3-3728-4e96-99a3-9659d7560990"))
+/* interface */ IAgCrdnVectorPlugin;
+struct __declspec(uuid("23d36cfe-e264-45d2-bb9c-21121e38bc56"))
+/* dual interface */ IAgCrdnVectorPluginResultReg;
+struct __declspec(uuid("bc419354-9340-4609-bd80-5799ad1868aa"))
+/* dual interface */ IAgCrdnVectorPluginResultReset;
+struct __declspec(uuid("2f83ce49-de6e-4997-9d33-1a627d35acd9"))
+/* dual interface */ IAgCrdnVectorPluginResultEval;
+struct __declspec(uuid("37628087-5ff6-4bc3-aeab-3823542f79a3"))
+/* interface */ IAgCrdnCalcScalarPlugin;
+struct __declspec(uuid("8b84d52c-d688-4e44-98f2-a28d40e1c3db"))
+/* dual interface */ IAgCrdnCalcScalarPluginResultReg;
+struct __declspec(uuid("d3934ccb-73bc-45a1-94fe-da0c0d7701c8"))
+/* dual interface */ IAgCrdnCalcScalarPluginResultReset;
+struct __declspec(uuid("824518fa-47bd-4cb3-a0db-ce2bcb269137"))
+/* dual interface */ IAgCrdnCalcScalarPluginResultEval;
+struct /* coclass */ AgCrdnConfiguredVector;
+struct /* coclass */ AgCrdnConfiguredVectorWithRate;
+struct /* coclass */ AgCrdnConfiguredAxes;
+struct /* coclass */ AgCrdnConfiguredAxesWithRate;
+struct /* coclass */ AgCrdnConfiguredAngle;
+struct /* coclass */ AgCrdnConfiguredAngleWithRate;
+struct /* coclass */ AgCrdnConfiguredPoint;
+struct /* coclass */ AgCrdnConfiguredPointWithRate;
+struct /* coclass */ AgCrdnConfiguredSystem;
+struct /* coclass */ AgCrdnConfiguredSystemWithRate;
+struct /* coclass */ AgCrdnPluginProvider;
+struct /* coclass */ AgCrdnConfiguredCalcScalar;
+struct /* coclass */ AgCrdnConfiguredCalcScalarWithRate;
+struct /* coclass */ AgCrdnConfiguredCalcParameterSet;
+struct /* coclass */ AgCrdnConfiguredCalcParameterSetWithRate;
+struct /* coclass */ AgCrdnPluginCalcProvider;
+struct /* coclass */ AgCrdnVectorPluginResultReg;
+struct /* coclass */ AgCrdnVectorPluginResultReset;
+struct /* coclass */ AgCrdnVectorPluginResultEval;
+struct /* coclass */ AgCrdnPointPluginResultReg;
+struct /* coclass */ AgCrdnPointPluginResultReset;
+struct /* coclass */ AgCrdnPointPluginResultEval;
+struct /* coclass */ AgCrdnAxesPluginResultReg;
+struct /* coclass */ AgCrdnAxesPluginResultReset;
+struct /* coclass */ AgCrdnAxesPluginResultEval;
+struct /* coclass */ AgCrdnCalcScalarPluginResultReg;
+struct /* coclass */ AgCrdnCalcScalarPluginResultReset;
+struct /* coclass */ AgCrdnCalcScalarPluginResultEval;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IAgCrdnAxesPluginResultReg, __uuidof(IAgCrdnAxesPluginResultReg));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnConfiguredVector, __uuidof(IAgCrdnConfiguredVector));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnConfiguredVectorWithRate, __uuidof(IAgCrdnConfiguredVectorWithRate));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnConfiguredAxes, __uuidof(IAgCrdnConfiguredAxes));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnConfiguredAxesWithRate, __uuidof(IAgCrdnConfiguredAxesWithRate));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnConfiguredAngle, __uuidof(IAgCrdnConfiguredAngle));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnConfiguredAngleWithRate, __uuidof(IAgCrdnConfiguredAngleWithRate));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnConfiguredPoint, __uuidof(IAgCrdnConfiguredPoint));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnConfiguredPointWithRate, __uuidof(IAgCrdnConfiguredPointWithRate));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnConfiguredSystem, __uuidof(IAgCrdnConfiguredSystem));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnConfiguredSystemWithRate, __uuidof(IAgCrdnConfiguredSystemWithRate));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnPluginProvider, __uuidof(IAgCrdnPluginProvider));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnConfiguredCalcScalar, __uuidof(IAgCrdnConfiguredCalcScalar));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnConfiguredCalcScalarWithRate, __uuidof(IAgCrdnConfiguredCalcScalarWithRate));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnConfiguredCalcParameterSet, __uuidof(IAgCrdnConfiguredCalcParameterSet));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnConfiguredCalcParameterSetWithRate, __uuidof(IAgCrdnConfiguredCalcParameterSetWithRate));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnPluginCalcProvider, __uuidof(IAgCrdnPluginCalcProvider));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnAxesPluginResultReset, __uuidof(IAgCrdnAxesPluginResultReset));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnAxesPluginResultEval, __uuidof(IAgCrdnAxesPluginResultEval));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnAxesPlugin, __uuidof(IAgCrdnAxesPlugin));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnPointPluginResultReg, __uuidof(IAgCrdnPointPluginResultReg));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnPointPluginResultReset, __uuidof(IAgCrdnPointPluginResultReset));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnPointPluginResultEval, __uuidof(IAgCrdnPointPluginResultEval));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnPointPlugin, __uuidof(IAgCrdnPointPlugin));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnVectorPluginResultReg, __uuidof(IAgCrdnVectorPluginResultReg));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnVectorPluginResultReset, __uuidof(IAgCrdnVectorPluginResultReset));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnVectorPluginResultEval, __uuidof(IAgCrdnVectorPluginResultEval));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnVectorPlugin, __uuidof(IAgCrdnVectorPlugin));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnCalcScalarPluginResultReg, __uuidof(IAgCrdnCalcScalarPluginResultReg));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnCalcScalarPluginResultReset, __uuidof(IAgCrdnCalcScalarPluginResultReset));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnCalcScalarPluginResultEval, __uuidof(IAgCrdnCalcScalarPluginResultEval));
+_COM_SMARTPTR_TYPEDEF(IAgCrdnCalcScalarPlugin, __uuidof(IAgCrdnCalcScalarPlugin));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("dbfdd0c5-0f8b-4e2e-baa0-38bb6ca4cd69"))
+IAgCrdnAxesPluginResultReg : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ObjectPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_ParentPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_GrandParentPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_ShortDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall put_ShortDescription (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall get_LongDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall put_LongDescription (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall SetRefAxes (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR SourcePath ) = 0;
+      virtual HRESULT __stdcall ClearAvailability ( ) = 0;
+      virtual HRESULT __stdcall AddAvailabilityInterval (
+        /*[in]*/ BSTR DateAbbrv,
+        /*[in]*/ BSTR StartDate,
+        /*[in]*/ BSTR StopDate ) = 0;
+      virtual HRESULT __stdcall ClearSpecialTimes ( ) = 0;
+      virtual HRESULT __stdcall AddSpecialTime (
+        /*[in]*/ BSTR DateAbbrv,
+        /*[in]*/ BSTR SpecialTime ) = 0;
+};
+
+struct __declspec(uuid("2abb252c-9ffa-4f2b-bf41-4cc3a4e4df84"))
+IAgCrdnConfiguredVector : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsConfigured (
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall get_ErrorText (
+        /*[out,retval]*/ BSTR * pErrorText ) = 0;
+      virtual HRESULT __stdcall Evaluate (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[in,out]*/ double * X,
+        /*[in,out]*/ double * Y,
+        /*[in,out]*/ double * Z,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Evaluate_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall CurrentValue (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[in,out]*/ double * X,
+        /*[in,out]*/ double * Y,
+        /*[in,out]*/ double * Z,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall CurrentValue_Array (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+};
+
+struct __declspec(uuid("3f126133-81a4-4126-95b5-3f832eb3d2a8"))
+IAgCrdnConfiguredVectorWithRate : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsConfigured (
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall get_ErrorText (
+        /*[out,retval]*/ BSTR * pErrorText ) = 0;
+      virtual HRESULT __stdcall Evaluate (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[in,out]*/ double * X,
+        /*[in,out]*/ double * Y,
+        /*[in,out]*/ double * Z,
+        /*[in,out]*/ double * Vx,
+        /*[in,out]*/ double * Vy,
+        /*[in,out]*/ double * Vz,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Evaluate_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall CurrentValue (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[in,out]*/ double * X,
+        /*[in,out]*/ double * Y,
+        /*[in,out]*/ double * Z,
+        /*[in,out]*/ double * Vx,
+        /*[in,out]*/ double * Vy,
+        /*[in,out]*/ double * Vz,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall CurrentValue_Array (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+};
+
+struct __declspec(uuid("05d845f4-4c85-4e09-b03d-791ff9f130ee"))
+IAgCrdnConfiguredAxes : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsConfigured (
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall get_ErrorText (
+        /*[out,retval]*/ BSTR * pErrorText ) = 0;
+      virtual HRESULT __stdcall Evaluate (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[in,out]*/ double * Q1,
+        /*[in,out]*/ double * Q2,
+        /*[in,out]*/ double * Q3,
+        /*[in,out]*/ double * Q4,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Evaluate_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall CurrentValue (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[in,out]*/ double * Q1,
+        /*[in,out]*/ double * Q2,
+        /*[in,out]*/ double * Q3,
+        /*[in,out]*/ double * Q4,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall CurrentValue_Array (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall TransformComponents (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[in,out]*/ double * X,
+        /*[in,out]*/ double * Y,
+        /*[in,out]*/ double * Z,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall TransformComponents_Array (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[in]*/ double X,
+        /*[in]*/ double Y,
+        /*[in]*/ double Z,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall TransformComponentsAtEpoch (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[in,out]*/ double * X,
+        /*[in,out]*/ double * Y,
+        /*[in,out]*/ double * Z,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall TransformComponentsAtEpoch_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[in]*/ double X,
+        /*[in]*/ double Y,
+        /*[in]*/ double Z,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+};
+
+struct __declspec(uuid("5b2f635e-140b-435c-8b39-cf0be6d11c79"))
+IAgCrdnConfiguredAxesWithRate : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsConfigured (
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall get_ErrorText (
+        /*[out,retval]*/ BSTR * pErrorText ) = 0;
+      virtual HRESULT __stdcall Evaluate (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[in,out]*/ double * Q1,
+        /*[in,out]*/ double * Q2,
+        /*[in,out]*/ double * Q3,
+        /*[in,out]*/ double * Q4,
+        /*[in,out]*/ double * Wx,
+        /*[in,out]*/ double * Wy,
+        /*[in,out]*/ double * Wz,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Evaluate_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall CurrentValue (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[in,out]*/ double * Q1,
+        /*[in,out]*/ double * Q2,
+        /*[in,out]*/ double * Q3,
+        /*[in,out]*/ double * Q4,
+        /*[in,out]*/ double * Wx,
+        /*[in,out]*/ double * Wy,
+        /*[in,out]*/ double * Wz,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall CurrentValue_Array (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall TransformComponents (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[in,out]*/ double * X,
+        /*[in,out]*/ double * Y,
+        /*[in,out]*/ double * Z,
+        /*[in,out]*/ double * Vx,
+        /*[in,out]*/ double * Vy,
+        /*[in,out]*/ double * Vz,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall TransformComponents_Array (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[in]*/ double X,
+        /*[in]*/ double Y,
+        /*[in]*/ double Z,
+        /*[in]*/ double Vx,
+        /*[in]*/ double Vy,
+        /*[in]*/ double Vz,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall TransformComponentsAtEpoch (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[in,out]*/ double * X,
+        /*[in,out]*/ double * Y,
+        /*[in,out]*/ double * Z,
+        /*[in,out]*/ double * Vx,
+        /*[in,out]*/ double * Vy,
+        /*[in,out]*/ double * Vz,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall TransformComponentsAtEpoch_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[in]*/ double X,
+        /*[in]*/ double Y,
+        /*[in]*/ double Z,
+        /*[in]*/ double Vx,
+        /*[in]*/ double Vy,
+        /*[in]*/ double Vz,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+};
+
+struct __declspec(uuid("1e5501ef-c66b-43ed-bd34-bfe573a36d3a"))
+IAgCrdnConfiguredAngle : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsConfigured (
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall get_ErrorText (
+        /*[out,retval]*/ BSTR * pErrorText ) = 0;
+      virtual HRESULT __stdcall Evaluate (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[in,out]*/ double * Angle,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Evaluate_RetVal (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[out,retval]*/ double * pAngle ) = 0;
+      virtual HRESULT __stdcall CurrentValue (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[in,out]*/ double * Angle,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall CurrentValue_RetVal (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[out,retval]*/ double * pAngle ) = 0;
+};
+
+struct __declspec(uuid("933c8f8c-9d24-4b77-9f67-4db1ab2725ea"))
+IAgCrdnConfiguredAngleWithRate : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsConfigured (
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall get_ErrorText (
+        /*[out,retval]*/ BSTR * pErrorText ) = 0;
+      virtual HRESULT __stdcall Evaluate (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[in,out]*/ double * Angle,
+        /*[in,out]*/ double * AngleRate,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Evaluate_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall CurrentValue (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[in,out]*/ double * Angle,
+        /*[in,out]*/ double * AngleRate,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall CurrentValue_Array (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+};
+
+struct __declspec(uuid("186c9b1e-c3b1-4222-a05e-9177ab68ff69"))
+IAgCrdnConfiguredPoint : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsConfigured (
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall get_ErrorText (
+        /*[out,retval]*/ BSTR * pErrorText ) = 0;
+      virtual HRESULT __stdcall Evaluate (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[in,out]*/ double * X,
+        /*[in,out]*/ double * Y,
+        /*[in,out]*/ double * Z,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Evaluate_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall CurrentValue (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[in,out]*/ double * X,
+        /*[in,out]*/ double * Y,
+        /*[in,out]*/ double * Z,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall CurrentValue_Array (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+};
+
+struct __declspec(uuid("0e587016-a94b-4919-be0e-affdb53d4833"))
+IAgCrdnConfiguredPointWithRate : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsConfigured (
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall get_ErrorText (
+        /*[out,retval]*/ BSTR * pErrorText ) = 0;
+      virtual HRESULT __stdcall Evaluate (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[in,out]*/ double * X,
+        /*[in,out]*/ double * Y,
+        /*[in,out]*/ double * Z,
+        /*[in,out]*/ double * Vx,
+        /*[in,out]*/ double * Vy,
+        /*[in,out]*/ double * Vz,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Evaluate_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall CurrentValue (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[in,out]*/ double * X,
+        /*[in,out]*/ double * Y,
+        /*[in,out]*/ double * Z,
+        /*[in,out]*/ double * Vx,
+        /*[in,out]*/ double * Vy,
+        /*[in,out]*/ double * Vz,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall CurrentValue_Array (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+};
+
+struct __declspec(uuid("58b4303a-78bd-4715-a91f-ed28dba1f32c"))
+IAgCrdnConfiguredSystem : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsConfigured (
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall get_ErrorText (
+        /*[out,retval]*/ BSTR * pErrorText ) = 0;
+      virtual HRESULT __stdcall Evaluate (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[in,out]*/ double * X,
+        /*[in,out]*/ double * Y,
+        /*[in,out]*/ double * Z,
+        /*[in,out]*/ double * Q1,
+        /*[in,out]*/ double * Q2,
+        /*[in,out]*/ double * Q3,
+        /*[in,out]*/ double * Q4,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Evaluate_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall CurrentValue (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[in,out]*/ double * X,
+        /*[in,out]*/ double * Y,
+        /*[in,out]*/ double * Z,
+        /*[in,out]*/ double * Q1,
+        /*[in,out]*/ double * Q2,
+        /*[in,out]*/ double * Q3,
+        /*[in,out]*/ double * Q4,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall CurrentValue_Array (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall TransformComponents (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[in,out]*/ double * X,
+        /*[in,out]*/ double * Y,
+        /*[in,out]*/ double * Z,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall TransformComponents_Array (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[in]*/ double X,
+        /*[in]*/ double Y,
+        /*[in]*/ double Z,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall TransformComponentsAtEpoch (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[in,out]*/ double * X,
+        /*[in,out]*/ double * Y,
+        /*[in,out]*/ double * Z,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall TransformComponentsAtEpoch_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[in]*/ double X,
+        /*[in]*/ double Y,
+        /*[in]*/ double Z,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+};
+
+struct __declspec(uuid("01d0aec2-16cd-4bfd-b964-b420f66fbc35"))
+IAgCrdnConfiguredSystemWithRate : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsConfigured (
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall get_ErrorText (
+        /*[out,retval]*/ BSTR * pErrorText ) = 0;
+      virtual HRESULT __stdcall Evaluate (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[in,out]*/ double * X,
+        /*[in,out]*/ double * Y,
+        /*[in,out]*/ double * Z,
+        /*[in,out]*/ double * Vx,
+        /*[in,out]*/ double * Vy,
+        /*[in,out]*/ double * Vz,
+        /*[in,out]*/ double * Q1,
+        /*[in,out]*/ double * Q2,
+        /*[in,out]*/ double * Q3,
+        /*[in,out]*/ double * Q4,
+        /*[in,out]*/ double * Wx,
+        /*[in,out]*/ double * Wy,
+        /*[in,out]*/ double * Wz,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Evaluate_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall CurrentValue (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[in,out]*/ double * X,
+        /*[in,out]*/ double * Y,
+        /*[in,out]*/ double * Z,
+        /*[in,out]*/ double * Vx,
+        /*[in,out]*/ double * Vy,
+        /*[in,out]*/ double * Vz,
+        /*[in,out]*/ double * Q1,
+        /*[in,out]*/ double * Q2,
+        /*[in,out]*/ double * Q3,
+        /*[in,out]*/ double * Q4,
+        /*[in,out]*/ double * Wx,
+        /*[in,out]*/ double * Wy,
+        /*[in,out]*/ double * Wz,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall CurrentValue_Array (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall TransformComponents (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[in,out]*/ double * X,
+        /*[in,out]*/ double * Y,
+        /*[in,out]*/ double * Z,
+        /*[in,out]*/ double * Vx,
+        /*[in,out]*/ double * Vy,
+        /*[in,out]*/ double * Vz,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall TransformComponents_Array (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[in]*/ double X,
+        /*[in]*/ double Y,
+        /*[in]*/ double Z,
+        /*[in]*/ double Vx,
+        /*[in]*/ double Vy,
+        /*[in]*/ double Vz,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall TransformComponentsAtEpoch (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[in,out]*/ double * X,
+        /*[in,out]*/ double * Y,
+        /*[in,out]*/ double * Z,
+        /*[in,out]*/ double * Vx,
+        /*[in,out]*/ double * Vy,
+        /*[in,out]*/ double * Vz,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall TransformComponentsAtEpoch_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[in]*/ double X,
+        /*[in]*/ double Y,
+        /*[in]*/ double Z,
+        /*[in]*/ double Vx,
+        /*[in]*/ double Vy,
+        /*[in]*/ double Vz,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+};
+
+struct __declspec(uuid("f5373cd2-6aaf-48ab-b199-e170ad72d643"))
+IAgCrdnPluginProvider : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_SourceNameDefault (
+        /*[out,retval]*/ BSTR * pSourceNameDefault ) = 0;
+      virtual HRESULT __stdcall ConfigureVector (
+        /*[in]*/ BSTR VectorName,
+        /*[in]*/ BSTR SourceName,
+        /*[in]*/ BSTR RefAxesName,
+        /*[in]*/ BSTR RefAxesSourceName,
+        /*[out,retval]*/ struct IAgCrdnConfiguredVector * * ppVector ) = 0;
+      virtual HRESULT __stdcall ConfigureVectorWithRate (
+        /*[in]*/ BSTR VectorName,
+        /*[in]*/ BSTR SourceName,
+        /*[in]*/ BSTR RefAxesName,
+        /*[in]*/ BSTR RefAxesSourceName,
+        /*[out,retval]*/ struct IAgCrdnConfiguredVectorWithRate * * ppVector ) = 0;
+      virtual HRESULT __stdcall ConfigureAxes (
+        /*[in]*/ BSTR AxesName,
+        /*[in]*/ BSTR SourceName,
+        /*[in]*/ BSTR RefAxesName,
+        /*[in]*/ BSTR RefAxesSourceName,
+        /*[out,retval]*/ struct IAgCrdnConfiguredAxes * * ppAxes ) = 0;
+      virtual HRESULT __stdcall ConfigureAxesWithRate (
+        /*[in]*/ BSTR AxesName,
+        /*[in]*/ BSTR SourceName,
+        /*[in]*/ BSTR RefAxesName,
+        /*[in]*/ BSTR RefAxesSourceName,
+        /*[out,retval]*/ struct IAgCrdnConfiguredAxesWithRate * * ppAxes ) = 0;
+      virtual HRESULT __stdcall ConfigureAngle (
+        /*[in]*/ BSTR AngleName,
+        /*[in]*/ BSTR SourceName,
+        /*[out,retval]*/ struct IAgCrdnConfiguredAngle * * ppAngle ) = 0;
+      virtual HRESULT __stdcall ConfigureAngleWithRate (
+        /*[in]*/ BSTR AngleName,
+        /*[in]*/ BSTR SourceName,
+        /*[out,retval]*/ struct IAgCrdnConfiguredAngleWithRate * * ppAngle ) = 0;
+      virtual HRESULT __stdcall ConfigurePoint (
+        /*[in]*/ BSTR PointName,
+        /*[in]*/ BSTR SourceName,
+        /*[in]*/ BSTR RefSystemName,
+        /*[in]*/ BSTR RefSystemSourceName,
+        /*[out,retval]*/ struct IAgCrdnConfiguredPoint * * ppPoint ) = 0;
+      virtual HRESULT __stdcall ConfigurePointWithRate (
+        /*[in]*/ BSTR PointName,
+        /*[in]*/ BSTR SourceName,
+        /*[in]*/ BSTR RefSystemName,
+        /*[in]*/ BSTR RefSystemSourceName,
+        /*[out,retval]*/ struct IAgCrdnConfiguredPointWithRate * * ppPoint ) = 0;
+      virtual HRESULT __stdcall ConfigureSystem (
+        /*[in]*/ BSTR SystemName,
+        /*[in]*/ BSTR SourceName,
+        /*[in]*/ BSTR RefSystemName,
+        /*[in]*/ BSTR RefSystemSourceName,
+        /*[out,retval]*/ struct IAgCrdnConfiguredSystem * * ppSystem ) = 0;
+      virtual HRESULT __stdcall ConfigureSystemWithRate (
+        /*[in]*/ BSTR SystemName,
+        /*[in]*/ BSTR SourceName,
+        /*[in]*/ BSTR RefSystemName,
+        /*[in]*/ BSTR RefSystemSourceName,
+        /*[out,retval]*/ struct IAgCrdnConfiguredSystemWithRate * * ppSystem ) = 0;
+};
+
+struct __declspec(uuid("8129f3fc-a2c2-4671-b026-f4a36794cb9c"))
+IAgCrdnConfiguredCalcScalar : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsConfigured (
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall get_ErrorText (
+        /*[out,retval]*/ BSTR * pErrorText ) = 0;
+      virtual HRESULT __stdcall Evaluate (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[in,out]*/ double * Value,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Evaluate_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall CurrentValue (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[in,out]*/ double * Value,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall CurrentValue_Array (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall get_Dimension (
+        /*[out,retval]*/ BSTR * pDimension ) = 0;
+      virtual HRESULT __stdcall get_UnitAbbrv (
+        /*[out,retval]*/ BSTR * pUnitAbbrv ) = 0;
+      virtual HRESULT __stdcall SetUnits (
+        /*[in]*/ BSTR UnitAbbrv,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+};
+
+struct __declspec(uuid("e8e2a828-56a7-4c0b-88e2-ff96268311be"))
+IAgCrdnConfiguredCalcScalarWithRate : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsConfigured (
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall get_ErrorText (
+        /*[out,retval]*/ BSTR * pErrorText ) = 0;
+      virtual HRESULT __stdcall Evaluate (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[in,out]*/ double * Value,
+        /*[in,out]*/ double * Rate,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Evaluate_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall CurrentValue (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[in,out]*/ double * Value,
+        /*[in,out]*/ double * Rate,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall CurrentValue_Array (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall get_Dimension (
+        /*[out,retval]*/ BSTR * pDimension ) = 0;
+      virtual HRESULT __stdcall get_UnitAbbrv (
+        /*[out,retval]*/ BSTR * pUnitAbbrv ) = 0;
+      virtual HRESULT __stdcall SetUnits (
+        /*[in]*/ BSTR UnitAbbrv,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+};
+
+struct __declspec(uuid("f1b9b070-e89d-4b2b-bc10-a0976da08f32"))
+IAgCrdnConfiguredCalcParameterSet : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsConfigured (
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall get_ErrorText (
+        /*[out,retval]*/ BSTR * pErrorText ) = 0;
+      virtual HRESULT __stdcall Evaluate_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall CurrentValue_Array (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+};
+
+struct __declspec(uuid("57516be0-2ec5-4e0b-94da-ffee2906d418"))
+IAgCrdnConfiguredCalcParameterSetWithRate : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsConfigured (
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall get_ErrorText (
+        /*[out,retval]*/ BSTR * pErrorText ) = 0;
+      virtual HRESULT __stdcall Evaluate_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in]*/ long WholeDays,
+        /*[in]*/ double SecsIntoDay,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall CurrentValue_Array (
+        /*[in]*/ IDispatch * DispInterface,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+};
+
+struct __declspec(uuid("a429efee-1973-4c8d-b35c-7bc629a2a75a"))
+IAgCrdnPluginCalcProvider : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_SourceNameDefault (
+        /*[out,retval]*/ BSTR * pSourceNameDefault ) = 0;
+      virtual HRESULT __stdcall GetCalcScalar (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR SourceName,
+        /*[out,retval]*/ struct IAgCrdnConfiguredCalcScalar * * ppCalcScalar ) = 0;
+      virtual HRESULT __stdcall GetCalcScalarWithRate (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR SourceName,
+        /*[out,retval]*/ struct IAgCrdnConfiguredCalcScalarWithRate * * ppCalcScalarWithRate ) = 0;
+      virtual HRESULT __stdcall GetCalcParameterSet (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR SourceName,
+        /*[out,retval]*/ struct IAgCrdnConfiguredCalcParameterSet * * ppCalcParameterSet ) = 0;
+      virtual HRESULT __stdcall GetCalcParameterSetWithRate (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR SourceName,
+        /*[out,retval]*/ struct IAgCrdnConfiguredCalcParameterSetWithRate * * ppCalcParameterSetWithRate ) = 0;
+};
+
+struct __declspec(uuid("8544b432-172c-420a-b0d0-0bd7958a67a1"))
+IAgCrdnAxesPluginResultReset : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_VectorToolProvider (
+        /*[out,retval]*/ struct IAgCrdnPluginProvider * * ppCrdnPrv ) = 0;
+      virtual HRESULT __stdcall get_CalcToolProvider (
+        /*[out,retval]*/ struct IAgCrdnPluginCalcProvider * * ppCrdnPrv ) = 0;
+      virtual HRESULT __stdcall get_ObjectPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_ParentPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_GrandParentPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_ShortDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall put_ShortDescription (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall get_LongDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall put_LongDescription (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall DayCount (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in,out]*/ long * WholeDays,
+        /*[in,out]*/ double * SecsIntoDay ) = 0;
+      virtual HRESULT __stdcall DayCount_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall DateElements (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in,out]*/ long * Year,
+        /*[in,out]*/ long * DayOfYear,
+        /*[in,out]*/ long * Month,
+        /*[in,out]*/ long * DayOfMonth,
+        /*[in,out]*/ long * Hour,
+        /*[in,out]*/ long * Minute,
+        /*[in,out]*/ double * Seconds ) = 0;
+      virtual HRESULT __stdcall DateElements_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall DateString (
+        /*[in]*/ BSTR DateAbbrv,
+        /*[out,retval]*/ BSTR * pDateString ) = 0;
+};
+
+enum AgECrdnEulerSequence
+{
+    eCrdnEulerSequence121 = 121,
+    eCrdnEulerSequence123 = 123,
+    eCrdnEulerSequence131 = 131,
+    eCrdnEulerSequence132 = 132,
+    eCrdnEulerSequence212 = 212,
+    eCrdnEulerSequence213 = 213,
+    eCrdnEulerSequence231 = 231,
+    eCrdnEulerSequence232 = 232,
+    eCrdnEulerSequence312 = 312,
+    eCrdnEulerSequence313 = 313,
+    eCrdnEulerSequence321 = 321,
+    eCrdnEulerSequence323 = 323
+};
+
+struct __declspec(uuid("e4707cdd-e425-40e1-af3d-d6c22b36b71b"))
+IAgCrdnAxesPluginResultEval : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_VectorToolProvider (
+        /*[out,retval]*/ struct IAgCrdnPluginProvider * * ppCrdnPrv ) = 0;
+      virtual HRESULT __stdcall get_CalcToolProvider (
+        /*[out,retval]*/ struct IAgCrdnPluginCalcProvider * * ppCrdnPrv ) = 0;
+      virtual HRESULT __stdcall get_ObjectPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_ParentPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_GrandParentPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_ShortDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall put_ShortDescription (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall get_LongDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall put_LongDescription (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall DayCount (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in,out]*/ long * WholeDays,
+        /*[in,out]*/ double * SecsIntoDay ) = 0;
+      virtual HRESULT __stdcall DayCount_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall DateElements (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in,out]*/ long * Year,
+        /*[in,out]*/ long * DayOfYear,
+        /*[in,out]*/ long * Month,
+        /*[in,out]*/ long * DayOfMonth,
+        /*[in,out]*/ long * Hour,
+        /*[in,out]*/ long * Minute,
+        /*[in,out]*/ double * Seconds ) = 0;
+      virtual HRESULT __stdcall DateElements_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall DateString (
+        /*[in]*/ BSTR DateAbbrv,
+        /*[out,retval]*/ BSTR * pDateString ) = 0;
+      virtual HRESULT __stdcall SetQuaternion (
+        /*[in]*/ double Q1,
+        /*[in]*/ double Q2,
+        /*[in]*/ double Q3,
+        /*[in]*/ double Q4 ) = 0;
+      virtual HRESULT __stdcall EulerRotate (
+        /*[in]*/ enum AgECrdnEulerSequence Sequence,
+        /*[in]*/ double First,
+        /*[in]*/ double Second,
+        /*[in]*/ double Third ) = 0;
+      virtual HRESULT __stdcall SetDCM (
+        /*[in]*/ double xx,
+        /*[in]*/ double xy,
+        /*[in]*/ double xz,
+        /*[in]*/ double yx,
+        /*[in]*/ double yy,
+        /*[in]*/ double yz,
+        /*[in]*/ double zx,
+        /*[in]*/ double zy,
+        /*[in]*/ double zz ) = 0;
+      virtual HRESULT __stdcall SetAngularVelocity (
+        /*[in]*/ double Wx,
+        /*[in]*/ double Wy,
+        /*[in]*/ double Wz ) = 0;
+      virtual HRESULT __stdcall SetAngularVelocityUsingRefAxes (
+        /*[in]*/ double Wx,
+        /*[in]*/ double Wy,
+        /*[in]*/ double Wz ) = 0;
+};
+
+struct __declspec(uuid("e3586fd7-2fa0-4457-a0a9-d163ccd1c8a8"))
+IAgCrdnAxesPlugin : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Init (
+        /*[in]*/ struct IAgUtPluginSite * Site,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Register (
+        /*[in]*/ struct IAgCrdnAxesPluginResultReg * Result ) = 0;
+      virtual HRESULT __stdcall Reset (
+        /*[in]*/ struct IAgCrdnAxesPluginResultReset * Result,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Evaluate (
+        /*[in]*/ struct IAgCrdnAxesPluginResultEval * Result,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Free ( ) = 0;
+};
+
+struct __declspec(uuid("293955b9-7601-4791-98c4-1fe0cc7b1d2c"))
+IAgCrdnPointPluginResultReg : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ObjectPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_ParentPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_GrandParentPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_ShortDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall put_ShortDescription (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall get_LongDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall put_LongDescription (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall SetRefSystem (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR SourcePath ) = 0;
+      virtual HRESULT __stdcall ClearAvailability ( ) = 0;
+      virtual HRESULT __stdcall AddAvailabilityInterval (
+        /*[in]*/ BSTR DateAbbrv,
+        /*[in]*/ BSTR StartDate,
+        /*[in]*/ BSTR StopDate ) = 0;
+      virtual HRESULT __stdcall ClearSpecialTimes ( ) = 0;
+      virtual HRESULT __stdcall AddSpecialTime (
+        /*[in]*/ BSTR DateAbbrv,
+        /*[in]*/ BSTR SpecialTime ) = 0;
+};
+
+struct __declspec(uuid("13d01153-a788-46c3-8045-bc38f8c8d385"))
+IAgCrdnPointPluginResultReset : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_VectorToolProvider (
+        /*[out,retval]*/ struct IAgCrdnPluginProvider * * ppCrdnPrv ) = 0;
+      virtual HRESULT __stdcall get_CalcToolProvider (
+        /*[out,retval]*/ struct IAgCrdnPluginCalcProvider * * ppCrdnPrv ) = 0;
+      virtual HRESULT __stdcall get_ObjectPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_ParentPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_GrandParentPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_ShortDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall put_ShortDescription (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall get_LongDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall put_LongDescription (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall DayCount (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in,out]*/ long * WholeDays,
+        /*[in,out]*/ double * SecsIntoDay ) = 0;
+      virtual HRESULT __stdcall DayCount_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall DateElements (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in,out]*/ long * Year,
+        /*[in,out]*/ long * DayOfYear,
+        /*[in,out]*/ long * Month,
+        /*[in,out]*/ long * DayOfMonth,
+        /*[in,out]*/ long * Hour,
+        /*[in,out]*/ long * Minute,
+        /*[in,out]*/ double * Seconds ) = 0;
+      virtual HRESULT __stdcall DateElements_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall DateString (
+        /*[in]*/ BSTR DateAbbrv,
+        /*[out,retval]*/ BSTR * pDateString ) = 0;
+};
+
+struct __declspec(uuid("b4fa32ea-53dd-4a97-a497-c2d97a631933"))
+IAgCrdnPointPluginResultEval : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_VectorToolProvider (
+        /*[out,retval]*/ struct IAgCrdnPluginProvider * * ppCrdnPrv ) = 0;
+      virtual HRESULT __stdcall get_CalcToolProvider (
+        /*[out,retval]*/ struct IAgCrdnPluginCalcProvider * * ppCrdnPrv ) = 0;
+      virtual HRESULT __stdcall get_ObjectPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_ParentPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_GrandParentPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_ShortDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall put_ShortDescription (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall get_LongDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall put_LongDescription (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall SetPosition (
+        /*[in]*/ double X,
+        /*[in]*/ double Y,
+        /*[in]*/ double Z ) = 0;
+      virtual HRESULT __stdcall SetVelocity (
+        /*[in]*/ double X,
+        /*[in]*/ double Y,
+        /*[in]*/ double Z ) = 0;
+      virtual HRESULT __stdcall DayCount (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in,out]*/ long * WholeDays,
+        /*[in,out]*/ double * SecsIntoDay ) = 0;
+      virtual HRESULT __stdcall DayCount_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall DateElements (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in,out]*/ long * Year,
+        /*[in,out]*/ long * DayOfYear,
+        /*[in,out]*/ long * Month,
+        /*[in,out]*/ long * DayOfMonth,
+        /*[in,out]*/ long * Hour,
+        /*[in,out]*/ long * Minute,
+        /*[in,out]*/ double * Seconds ) = 0;
+      virtual HRESULT __stdcall DateElements_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall DateString (
+        /*[in]*/ BSTR DateAbbrv,
+        /*[out,retval]*/ BSTR * pDateString ) = 0;
+};
+
+struct __declspec(uuid("ae857a22-bbf4-44c9-84d4-0e1abc461cbd"))
+IAgCrdnPointPlugin : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Init (
+        /*[in]*/ struct IAgUtPluginSite * Site,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Register (
+        /*[in]*/ struct IAgCrdnPointPluginResultReg * Result ) = 0;
+      virtual HRESULT __stdcall Reset (
+        /*[in]*/ struct IAgCrdnPointPluginResultReset * Result,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Evaluate (
+        /*[in]*/ struct IAgCrdnPointPluginResultEval * Result,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Free ( ) = 0;
+};
+
+struct __declspec(uuid("23d36cfe-e264-45d2-bb9c-21121e38bc56"))
+IAgCrdnVectorPluginResultReg : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ObjectPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_ParentPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_GrandParentPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_ShortDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall put_ShortDescription (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall get_LongDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall put_LongDescription (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall put_Dimension (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall SetRefAxes (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR SourcePath ) = 0;
+      virtual HRESULT __stdcall ClearAvailability ( ) = 0;
+      virtual HRESULT __stdcall AddAvailabilityInterval (
+        /*[in]*/ BSTR DateAbbrv,
+        /*[in]*/ BSTR StartDate,
+        /*[in]*/ BSTR StopDate ) = 0;
+      virtual HRESULT __stdcall ClearSpecialTimes ( ) = 0;
+      virtual HRESULT __stdcall AddSpecialTime (
+        /*[in]*/ BSTR DateAbbrv,
+        /*[in]*/ BSTR SpecialTime ) = 0;
+};
+
+struct __declspec(uuid("bc419354-9340-4609-bd80-5799ad1868aa"))
+IAgCrdnVectorPluginResultReset : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_VectorToolProvider (
+        /*[out,retval]*/ struct IAgCrdnPluginProvider * * ppCrdnPrv ) = 0;
+      virtual HRESULT __stdcall get_CalcToolProvider (
+        /*[out,retval]*/ struct IAgCrdnPluginCalcProvider * * ppCrdnPrv ) = 0;
+      virtual HRESULT __stdcall get_ObjectPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_ParentPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_GrandParentPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_ShortDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall put_ShortDescription (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall get_LongDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall put_LongDescription (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall DayCount (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in,out]*/ long * WholeDays,
+        /*[in,out]*/ double * SecsIntoDay ) = 0;
+      virtual HRESULT __stdcall DayCount_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall DateElements (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in,out]*/ long * Year,
+        /*[in,out]*/ long * DayOfYear,
+        /*[in,out]*/ long * Month,
+        /*[in,out]*/ long * DayOfMonth,
+        /*[in,out]*/ long * Hour,
+        /*[in,out]*/ long * Minute,
+        /*[in,out]*/ double * Seconds ) = 0;
+      virtual HRESULT __stdcall DateElements_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall DateString (
+        /*[in]*/ BSTR DateAbbrv,
+        /*[out,retval]*/ BSTR * pDateString ) = 0;
+};
+
+struct __declspec(uuid("2f83ce49-de6e-4997-9d33-1a627d35acd9"))
+IAgCrdnVectorPluginResultEval : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_VectorToolProvider (
+        /*[out,retval]*/ struct IAgCrdnPluginProvider * * ppCrdnPrv ) = 0;
+      virtual HRESULT __stdcall get_CalcToolProvider (
+        /*[out,retval]*/ struct IAgCrdnPluginCalcProvider * * ppCrdnPrv ) = 0;
+      virtual HRESULT __stdcall get_ObjectPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_ParentPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_GrandParentPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_ShortDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall put_ShortDescription (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall get_LongDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall put_LongDescription (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall SetVectorComponents (
+        /*[in]*/ double X,
+        /*[in]*/ double Y,
+        /*[in]*/ double Z ) = 0;
+      virtual HRESULT __stdcall SetVectorRateComponents (
+        /*[in]*/ double X,
+        /*[in]*/ double Y,
+        /*[in]*/ double Z ) = 0;
+      virtual HRESULT __stdcall DayCount (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in,out]*/ long * WholeDays,
+        /*[in,out]*/ double * SecsIntoDay ) = 0;
+      virtual HRESULT __stdcall DayCount_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall DateElements (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in,out]*/ long * Year,
+        /*[in,out]*/ long * DayOfYear,
+        /*[in,out]*/ long * Month,
+        /*[in,out]*/ long * DayOfMonth,
+        /*[in,out]*/ long * Hour,
+        /*[in,out]*/ long * Minute,
+        /*[in,out]*/ double * Seconds ) = 0;
+      virtual HRESULT __stdcall DateElements_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall DateString (
+        /*[in]*/ BSTR DateAbbrv,
+        /*[out,retval]*/ BSTR * pDateString ) = 0;
+};
+
+struct __declspec(uuid("59b40cf3-3728-4e96-99a3-9659d7560990"))
+IAgCrdnVectorPlugin : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Init (
+        /*[in]*/ struct IAgUtPluginSite * Site,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Register (
+        /*[in]*/ struct IAgCrdnVectorPluginResultReg * Result ) = 0;
+      virtual HRESULT __stdcall Reset (
+        /*[in]*/ struct IAgCrdnVectorPluginResultReset * Result,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Evaluate (
+        /*[in]*/ struct IAgCrdnVectorPluginResultEval * Result,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Free ( ) = 0;
+};
+
+struct __declspec(uuid("8b84d52c-d688-4e44-98f2-a28d40e1c3db"))
+IAgCrdnCalcScalarPluginResultReg : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ObjectPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_ParentPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_GrandParentPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_ShortDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall put_ShortDescription (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall get_LongDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall put_LongDescription (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall ClearAvailability ( ) = 0;
+      virtual HRESULT __stdcall AddAvailabilityInterval (
+        /*[in]*/ BSTR DateAbbrv,
+        /*[in]*/ BSTR StartDate,
+        /*[in]*/ BSTR StopDate ) = 0;
+      virtual HRESULT __stdcall ClearSpecialTimes ( ) = 0;
+      virtual HRESULT __stdcall AddSpecialTime (
+        /*[in]*/ BSTR DateAbbrv,
+        /*[in]*/ BSTR SpecialTime ) = 0;
+      virtual HRESULT __stdcall put_Dimension (
+        /*[in]*/ BSTR pDimension ) = 0;
+      virtual HRESULT __stdcall get_Dimension (
+        /*[out,retval]*/ BSTR * pDimension ) = 0;
+      virtual HRESULT __stdcall get_UnitAbbrv (
+        /*[out,retval]*/ BSTR * pUnitAbbrv ) = 0;
+      virtual HRESULT __stdcall SetUnits (
+        /*[in]*/ BSTR UnitAbbrv,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+};
+
+struct __declspec(uuid("d3934ccb-73bc-45a1-94fe-da0c0d7701c8"))
+IAgCrdnCalcScalarPluginResultReset : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_VectorToolProvider (
+        /*[out,retval]*/ struct IAgCrdnPluginProvider * * ppCrdnPrv ) = 0;
+      virtual HRESULT __stdcall get_CalcToolProvider (
+        /*[out,retval]*/ struct IAgCrdnPluginCalcProvider * * ppCrdnPrv ) = 0;
+      virtual HRESULT __stdcall get_ObjectPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_ParentPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_GrandParentPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_ShortDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall put_ShortDescription (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall get_LongDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall put_LongDescription (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall DayCount (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in,out]*/ long * WholeDays,
+        /*[in,out]*/ double * SecsIntoDay ) = 0;
+      virtual HRESULT __stdcall DayCount_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall DateElements (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in,out]*/ long * Year,
+        /*[in,out]*/ long * DayOfYear,
+        /*[in,out]*/ long * Month,
+        /*[in,out]*/ long * DayOfMonth,
+        /*[in,out]*/ long * Hour,
+        /*[in,out]*/ long * Minute,
+        /*[in,out]*/ double * Seconds ) = 0;
+      virtual HRESULT __stdcall DateElements_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall DateString (
+        /*[in]*/ BSTR DateAbbrv,
+        /*[out,retval]*/ BSTR * pDateString ) = 0;
+      virtual HRESULT __stdcall get_Dimension (
+        /*[out,retval]*/ BSTR * pDimension ) = 0;
+      virtual HRESULT __stdcall get_UnitAbbrv (
+        /*[out,retval]*/ BSTR * pUnitAbbrv ) = 0;
+      virtual HRESULT __stdcall SetUnits (
+        /*[in]*/ BSTR UnitAbbrv,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+};
+
+struct __declspec(uuid("824518fa-47bd-4cb3-a0db-ce2bcb269137"))
+IAgCrdnCalcScalarPluginResultEval : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_VectorToolProvider (
+        /*[out,retval]*/ struct IAgCrdnPluginProvider * * ppCrdnPrv ) = 0;
+      virtual HRESULT __stdcall get_CalcToolProvider (
+        /*[out,retval]*/ struct IAgCrdnPluginCalcProvider * * ppCrdnPrv ) = 0;
+      virtual HRESULT __stdcall get_ObjectPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_ParentPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_GrandParentPath (
+        /*[out,retval]*/ BSTR * pPath ) = 0;
+      virtual HRESULT __stdcall get_ShortDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall put_ShortDescription (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall get_LongDescription (
+        /*[out,retval]*/ BSTR * pDescription ) = 0;
+      virtual HRESULT __stdcall put_LongDescription (
+        /*[in]*/ BSTR pDescription ) = 0;
+      virtual HRESULT __stdcall DayCount (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in,out]*/ long * WholeDays,
+        /*[in,out]*/ double * SecsIntoDay ) = 0;
+      virtual HRESULT __stdcall DayCount_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall DateElements (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[in,out]*/ long * Year,
+        /*[in,out]*/ long * DayOfYear,
+        /*[in,out]*/ long * Month,
+        /*[in,out]*/ long * DayOfMonth,
+        /*[in,out]*/ long * Hour,
+        /*[in,out]*/ long * Minute,
+        /*[in,out]*/ double * Seconds ) = 0;
+      virtual HRESULT __stdcall DateElements_Array (
+        /*[in]*/ enum AgEUtTimeScale Scale,
+        /*[out,retval]*/ SAFEARRAY * * pArray ) = 0;
+      virtual HRESULT __stdcall DateString (
+        /*[in]*/ BSTR DateAbbrv,
+        /*[out,retval]*/ BSTR * pDateString ) = 0;
+      virtual HRESULT __stdcall get_Dimension (
+        /*[out,retval]*/ BSTR * pDimension ) = 0;
+      virtual HRESULT __stdcall get_UnitAbbrv (
+        /*[out,retval]*/ BSTR * pUnitAbbrv ) = 0;
+      virtual HRESULT __stdcall SetUnits (
+        /*[in]*/ BSTR UnitAbbrv,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall SetValue (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall SetValueAndRate (
+        /*[in]*/ double Value,
+        /*[in]*/ double ValueRate ) = 0;
+};
+
+struct __declspec(uuid("37628087-5ff6-4bc3-aeab-3823542f79a3"))
+IAgCrdnCalcScalarPlugin : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Init (
+        /*[in]*/ struct IAgUtPluginSite * Site,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Register (
+        /*[in]*/ struct IAgCrdnCalcScalarPluginResultReg * Result ) = 0;
+      virtual HRESULT __stdcall Reset (
+        /*[in]*/ struct IAgCrdnCalcScalarPluginResultReset * Result,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Evaluate (
+        /*[in]*/ struct IAgCrdnCalcScalarPluginResultEval * Result,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Free ( ) = 0;
+};
+
+struct __declspec(uuid("f46ad90b-4ca8-4d48-b8db-bcfea4554ee9"))
+AgCrdnConfiguredVector;
+    // [ default ] interface IAgCrdnConfiguredVector
+
+struct __declspec(uuid("e3c5358b-6123-454b-b157-fb40726a51d9"))
+AgCrdnConfiguredVectorWithRate;
+    // [ default ] interface IAgCrdnConfiguredVectorWithRate
+
+struct __declspec(uuid("163733b7-405f-4bc2-a98a-b9691ccafb25"))
+AgCrdnConfiguredAxes;
+    // [ default ] interface IAgCrdnConfiguredAxes
+
+struct __declspec(uuid("2137811f-75b5-4836-8abd-253d4e01ccfb"))
+AgCrdnConfiguredAxesWithRate;
+    // [ default ] interface IAgCrdnConfiguredAxesWithRate
+
+struct __declspec(uuid("63387b99-2d70-4592-8f67-9fa30cf5a312"))
+AgCrdnConfiguredAngle;
+    // [ default ] interface IAgCrdnConfiguredAngle
+
+struct __declspec(uuid("cb707f34-56e1-474d-b176-91905f4887d6"))
+AgCrdnConfiguredAngleWithRate;
+    // [ default ] interface IAgCrdnConfiguredAngleWithRate
+
+struct __declspec(uuid("0dc01c3d-ffd5-4fe5-8767-76f5d9a28bb8"))
+AgCrdnConfiguredPoint;
+    // [ default ] interface IAgCrdnConfiguredPoint
+
+struct __declspec(uuid("74573cd1-e8bf-41d9-b45b-aeaa14743a21"))
+AgCrdnConfiguredPointWithRate;
+    // [ default ] interface IAgCrdnConfiguredPointWithRate
+
+struct __declspec(uuid("84f9c63c-0699-4027-befb-7554f676d2f6"))
+AgCrdnConfiguredSystem;
+    // [ default ] interface IAgCrdnConfiguredSystem
+
+struct __declspec(uuid("9d5ebf6d-7d19-46fb-8cca-189cf0ddd18c"))
+AgCrdnConfiguredSystemWithRate;
+    // [ default ] interface IAgCrdnConfiguredSystemWithRate
+
+struct __declspec(uuid("76edae4d-968f-4fbe-a79b-e99ea787432c"))
+AgCrdnPluginProvider;
+    // [ default ] interface IAgCrdnPluginProvider
+
+struct __declspec(uuid("ad4b51e5-70c8-434d-abe3-9d694f3da3a9"))
+AgCrdnConfiguredCalcScalar;
+    // [ default ] interface IAgCrdnConfiguredCalcScalar
+
+struct __declspec(uuid("4f235521-71f6-4ab3-a935-e11ac924e8c3"))
+AgCrdnConfiguredCalcScalarWithRate;
+    // [ default ] interface IAgCrdnConfiguredCalcScalarWithRate
+
+struct __declspec(uuid("e927f24a-6674-4a93-bf5e-86082cfe4d8b"))
+AgCrdnConfiguredCalcParameterSet;
+    // [ default ] interface IAgCrdnConfiguredCalcParameterSet
+
+struct __declspec(uuid("14868a90-f007-40f6-bd24-449e43c15bbe"))
+AgCrdnConfiguredCalcParameterSetWithRate;
+    // [ default ] interface IAgCrdnConfiguredCalcParameterSetWithRate
+
+struct __declspec(uuid("5c7763ef-2301-4dd0-9fe7-b30b4b3147fe"))
+AgCrdnPluginCalcProvider;
+    // [ default ] interface IAgCrdnPluginCalcProvider
+
+struct __declspec(uuid("7ae6ba49-9e79-4e91-9b9e-a93b4e0bafda"))
+AgCrdnVectorPluginResultReg;
+    // [ default ] interface IAgCrdnVectorPluginResultReg
+
+struct __declspec(uuid("d416d7d2-d404-4382-8225-63e3c0c8a15f"))
+AgCrdnVectorPluginResultReset;
+    // [ default ] interface IAgCrdnVectorPluginResultReset
+
+struct __declspec(uuid("9bbe4b92-2093-40fb-8f80-d0ee169f0e47"))
+AgCrdnVectorPluginResultEval;
+    // [ default ] interface IAgCrdnVectorPluginResultEval
+
+struct __declspec(uuid("76bd6bcd-7282-4440-bc8f-d50984d91ff7"))
+AgCrdnPointPluginResultReg;
+    // [ default ] interface IAgCrdnPointPluginResultReg
+
+struct __declspec(uuid("b1fb3d85-05e0-4307-a65c-dedf6e079824"))
+AgCrdnPointPluginResultReset;
+    // [ default ] interface IAgCrdnPointPluginResultReset
+
+struct __declspec(uuid("cf26af35-496f-4d56-b420-57f15571bff7"))
+AgCrdnPointPluginResultEval;
+    // [ default ] interface IAgCrdnPointPluginResultEval
+
+struct __declspec(uuid("677ef209-0d37-4be0-9f87-26babf805eb4"))
+AgCrdnAxesPluginResultReg;
+    // [ default ] interface IAgCrdnAxesPluginResultReg
+
+struct __declspec(uuid("4f8a03c2-c29d-4168-9baa-e97195bdf035"))
+AgCrdnAxesPluginResultReset;
+    // [ default ] interface IAgCrdnAxesPluginResultReset
+
+struct __declspec(uuid("bdd2fcba-03dc-4b72-9c03-cf986c6ab20b"))
+AgCrdnAxesPluginResultEval;
+    // [ default ] interface IAgCrdnAxesPluginResultEval
+
+struct __declspec(uuid("c923e634-7aaa-4917-9041-319e95b6795b"))
+AgCrdnCalcScalarPluginResultReg;
+    // [ default ] interface IAgCrdnCalcScalarPluginResultReg
+
+struct __declspec(uuid("000e7450-672c-468a-804f-ef60aa504afa"))
+AgCrdnCalcScalarPluginResultReset;
+    // [ default ] interface IAgCrdnCalcScalarPluginResultReset
+
+struct __declspec(uuid("fd92a979-f185-4a49-9ad0-1f5b0ef5869a"))
+AgCrdnCalcScalarPluginResultEval;
+    // [ default ] interface IAgCrdnCalcScalarPluginResultEval
+
+#pragma pack(pop)
