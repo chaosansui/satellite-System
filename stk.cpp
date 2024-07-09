@@ -1,6 +1,0 @@
-#include "stk.h"
-#include "CppIncludes/AgStkUtil.tli"
-#include "CppIncludes/AgSTKGraphics.tli"
-#include "CppIncludes/AgStkObjects.tli"
-#include "CppIncludes/STKX.tli"
-#include "stdafx.h"
