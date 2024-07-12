@@ -1,0 +1,311 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.16.27026.1 (b0387108).
+//
+// d:\dev\r_stk_prod_x64\source\lib\release.x64\tlhbuilder\agsearch.tlh
+//
+// C++ source equivalent of type library AgSearch.tlb
+// compiler-generated file created 03/29/19 at 20:37:36 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//  #import "D:\Dev\R_STK_prod_x64\Source\bin\Release.x64\AgAsHpopPlugin.DLL"
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("0909aa5d-41f7-47a2-9ebe-5826ec0f78e8"))
+/* LIBID */ __AgSearch;
+enum AgESearchPluginErrorCodes;
+struct __declspec(uuid("5c0fa099-41de-4f73-b218-d1f996e27387"))
+/* interface */ IAgPluginSearch;
+enum AgESearchControlTypes;
+struct __declspec(uuid("45d6651f-ff93-48cc-abe9-78fd08c4cebb"))
+/* dual interface */ IAgSearchPluginOperand;
+struct __declspec(uuid("67a00871-9b5a-42da-b63d-49674c35ed39"))
+/* dual interface */ IAgSearchControlCollection;
+struct __declspec(uuid("a05cfd20-f2e0-48d7-bd4c-d3df88ff852a"))
+/* interface */ IAgSearchControl;
+struct __declspec(uuid("eff32fa4-f98e-4e7f-891b-523b8133aaa3"))
+/* dual interface */ IAgSearchResultCollection;
+struct __declspec(uuid("1794aa9c-1762-4e2d-9dde-c5e0c95f825d"))
+/* interface */ IAgSearchResult;
+struct __declspec(uuid("36b1dc5d-0ba4-42ac-8225-de9f6e6c6aeb"))
+/* dual interface */ IAgPluginSearchStatusGrid;
+struct __declspec(uuid("56c81403-0567-48d9-a8ca-76d722aee95f"))
+/* interface */ IAgSearchControlReal;
+struct /* coclass */ AgSearchPluginOperand;
+struct /* coclass */ AgSearchControlCollection;
+struct /* coclass */ AgSearchResultCollection;
+struct /* coclass */ AgPluginSearchStatusGrid;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IAgSearchControl, __uuidof(IAgSearchControl));
+_COM_SMARTPTR_TYPEDEF(IAgSearchControlCollection, __uuidof(IAgSearchControlCollection));
+_COM_SMARTPTR_TYPEDEF(IAgSearchResult, __uuidof(IAgSearchResult));
+_COM_SMARTPTR_TYPEDEF(IAgSearchResultCollection, __uuidof(IAgSearchResultCollection));
+_COM_SMARTPTR_TYPEDEF(IAgPluginSearchStatusGrid, __uuidof(IAgPluginSearchStatusGrid));
+_COM_SMARTPTR_TYPEDEF(IAgSearchPluginOperand, __uuidof(IAgSearchPluginOperand));
+_COM_SMARTPTR_TYPEDEF(IAgPluginSearch, __uuidof(IAgPluginSearch));
+_COM_SMARTPTR_TYPEDEF(IAgSearchControlReal, __uuidof(IAgSearchControlReal));
+
+//
+// Type library items
+//
+
+enum AgESearchPluginErrorCodes
+{
+    eSearchPluginErrorCodesOperandError = -2147221240,
+    eSearchPluginErrorCodesOperandProfileFailure = -2147221239,
+    eSearchPluginErrorCodesGUIDataFailure = -2147221232,
+    eSearchPluginErrorCodesOperandStopped = -2147221231,
+    eSearchPluginErrorCodesOperandCanceled = -2147221230
+};
+
+enum AgESearchControlTypes
+{
+    eSearchControlTypesReal = 0
+};
+
+struct __declspec(uuid("a05cfd20-f2e0-48d7-bd4c-d3df88ff852a"))
+IAgSearchControl : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ObjectName (
+        /*[out,retval]*/ BSTR * pObjectName ) = 0;
+      virtual HRESULT __stdcall put_ObjectName (
+        /*[in]*/ BSTR pObjectName ) = 0;
+      virtual HRESULT __stdcall get_ControlName (
+        /*[out,retval]*/ BSTR * pControlName ) = 0;
+      virtual HRESULT __stdcall put_ControlName (
+        /*[in]*/ BSTR pControlName ) = 0;
+      virtual HRESULT __stdcall get_ControlType (
+        /*[out,retval]*/ enum AgESearchControlTypes * pType ) = 0;
+      virtual HRESULT __stdcall put_ControlType (
+        /*[in]*/ enum AgESearchControlTypes pType ) = 0;
+};
+
+struct __declspec(uuid("67a00871-9b5a-42da-b63d-49674c35ed39"))
+IAgSearchControlCollection : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IAgSearchControl * * pSearchControl ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * ppEnumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * plCount ) = 0;
+};
+
+struct __declspec(uuid("1794aa9c-1762-4e2d-9dde-c5e0c95f825d"))
+IAgSearchResult : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ObjectName (
+        /*[out,retval]*/ BSTR * pObjectName ) = 0;
+      virtual HRESULT __stdcall put_ObjectName (
+        /*[in]*/ BSTR pObjectName ) = 0;
+      virtual HRESULT __stdcall get_ResultName (
+        /*[out,retval]*/ BSTR * pResultName ) = 0;
+      virtual HRESULT __stdcall put_ResultName (
+        /*[in]*/ BSTR pResultName ) = 0;
+      virtual HRESULT __stdcall get_CurrentValue (
+        /*[out,retval]*/ double * pCurrentValue ) = 0;
+      virtual HRESULT __stdcall put_CurrentValue (
+        /*[in]*/ double pCurrentValue ) = 0;
+      virtual HRESULT __stdcall get_IsValid (
+        /*[out,retval]*/ VARIANT_BOOL * pIsValid ) = 0;
+      virtual HRESULT __stdcall put_IsValid (
+        /*[in]*/ VARIANT_BOOL pIsValid ) = 0;
+      virtual HRESULT __stdcall get_Dimension (
+        /*[out,retval]*/ BSTR * pDimension ) = 0;
+      virtual HRESULT __stdcall put_Dimension (
+        /*[in]*/ BSTR pDimension ) = 0;
+      virtual HRESULT __stdcall get_InternalUnit (
+        /*[out,retval]*/ BSTR * pInternalUnit ) = 0;
+      virtual HRESULT __stdcall put_InternalUnit (
+        /*[in]*/ BSTR pInternalUnit ) = 0;
+};
+
+struct __declspec(uuid("eff32fa4-f98e-4e7f-891b-523b8133aaa3"))
+IAgSearchResultCollection : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IAgSearchResult * * pSearchResult ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * ppEnumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * plCount ) = 0;
+};
+
+struct __declspec(uuid("36b1dc5d-0ba4-42ac-8225-de9f6e6c6aeb"))
+IAgPluginSearchStatusGrid : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CreateGrid (
+        /*[in]*/ int NumRows,
+        /*[in]*/ int NumCols ) = 0;
+      virtual HRESULT __stdcall SetCellString (
+        /*[in]*/ int Row,
+        /*[in]*/ int Col,
+        /*[in]*/ BSTR Text ) = 0;
+      virtual HRESULT __stdcall SetCellValue (
+        /*[in]*/ int Row,
+        /*[in]*/ int Col,
+        /*[in]*/ double Value,
+        /*[in]*/ BSTR Dimension,
+        /*[in]*/ int NumDigits ) = 0;
+      virtual HRESULT __stdcall SetStatus (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall Refresh ( ) = 0;
+      virtual HRESULT __stdcall SetColumnToTruncateLeft (
+        /*[in]*/ int Col ) = 0;
+      virtual HRESULT __stdcall SetHeaderCellString (
+        /*[in]*/ int Row,
+        /*[in]*/ int Col,
+        /*[in]*/ BSTR Text ) = 0;
+      virtual HRESULT __stdcall SetCellControlValue (
+        /*[in]*/ int Row,
+        /*[in]*/ int Col,
+        /*[in]*/ int ControlIndex,
+        /*[in]*/ double Value,
+        /*[in]*/ int NumDigits ) = 0;
+      virtual HRESULT __stdcall SetCellResultValue (
+        /*[in]*/ int Row,
+        /*[in]*/ int Col,
+        /*[in]*/ int ResultIndex,
+        /*[in]*/ double Value,
+        /*[in]*/ int NumDigits ) = 0;
+      virtual HRESULT __stdcall SetCellControlDeltaValue (
+        /*[in]*/ int Row,
+        /*[in]*/ int Col,
+        /*[in]*/ int ControlIndex,
+        /*[in]*/ double Value,
+        /*[in]*/ int NumDigits ) = 0;
+      virtual HRESULT __stdcall SetCellResultDeltaValue (
+        /*[in]*/ int Row,
+        /*[in]*/ int Col,
+        /*[in]*/ int ResultIndex,
+        /*[in]*/ double Value,
+        /*[in]*/ int NumDigits ) = 0;
+};
+
+struct __declspec(uuid("45d6651f-ff93-48cc-abe9-78fd08c4cebb"))
+IAgSearchPluginOperand : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Trace (
+        /*[in]*/ long NumCalls ) = 0;
+      virtual HRESULT __stdcall Evaluate (
+        /*[out,retval]*/ VARIANT_BOOL * pReturn ) = 0;
+      virtual HRESULT __stdcall get_Controls (
+        /*[out,retval]*/ struct IAgSearchControlCollection * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Results (
+        /*[out,retval]*/ struct IAgSearchResultCollection * * pVal ) = 0;
+      virtual HRESULT __stdcall get_StatusGrid (
+        /*[out,retval]*/ struct IAgPluginSearchStatusGrid * * pGrid ) = 0;
+      virtual HRESULT __stdcall Evaluate2 (
+        /*[in]*/ VARIANT_BOOL IsIteration,
+        /*[out,retval]*/ VARIANT_BOOL * pReturn ) = 0;
+      virtual HRESULT __stdcall get_LogFile (
+        /*[out,retval]*/ BSTR * pbstrFileName ) = 0;
+      virtual HRESULT __stdcall get_ProfileName (
+        /*[out,retval]*/ BSTR * pbstrProfileName ) = 0;
+};
+
+struct __declspec(uuid("5c0fa099-41de-4f73-b218-d1f996e27387"))
+IAgPluginSearch : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pName ) = 0;
+      virtual HRESULT __stdcall GetControlsProgID (
+        /*[in]*/ enum AgESearchControlTypes Type,
+        /*[out,retval]*/ BSTR * pProgID ) = 0;
+      virtual HRESULT __stdcall GetResultsProgID (
+        /*[out,retval]*/ BSTR * pProgID ) = 0;
+      virtual HRESULT __stdcall Init (
+        /*[in]*/ struct IAgUtPluginSite * Site,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Run (
+        /*[in]*/ struct IAgSearchPluginOperand * SearchOperand,
+        /*[in]*/ VARIANT_BOOL * Testing,
+        /*[out,retval]*/ VARIANT_BOOL * pResult ) = 0;
+      virtual HRESULT __stdcall Free ( ) = 0;
+};
+
+struct __declspec(uuid("56c81403-0567-48d9-a8ca-76d722aee95f"))
+IAgSearchControlReal : IAgSearchControl
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_CurrentValue (
+        /*[out,retval]*/ double * pCurrentValue ) = 0;
+      virtual HRESULT __stdcall put_CurrentValue (
+        /*[in]*/ double pCurrentValue ) = 0;
+      virtual HRESULT __stdcall get_InitialValue (
+        /*[out,retval]*/ double * pInitialValue ) = 0;
+      virtual HRESULT __stdcall put_InitialValue (
+        /*[in]*/ double pInitialValue ) = 0;
+      virtual HRESULT __stdcall get_Dimension (
+        /*[out,retval]*/ BSTR * pDimension ) = 0;
+      virtual HRESULT __stdcall put_Dimension (
+        /*[in]*/ BSTR pDimension ) = 0;
+      virtual HRESULT __stdcall get_InternalUnit (
+        /*[out,retval]*/ BSTR * pInternalUnit ) = 0;
+      virtual HRESULT __stdcall put_InternalUnit (
+        /*[in]*/ BSTR pInternalUnit ) = 0;
+};
+
+struct __declspec(uuid("9f445108-c15c-4dea-908d-cbb5047f6433"))
+AgSearchPluginOperand;
+    // [ default ] interface IAgSearchPluginOperand
+
+struct __declspec(uuid("5cc5ff14-375a-4cd8-b45f-6d988d33c8ba"))
+AgSearchControlCollection;
+    // [ default ] interface IAgSearchControlCollection
+
+struct __declspec(uuid("0f9e84f5-9e9e-42e0-a357-453ede1f6d59"))
+AgSearchResultCollection;
+    // [ default ] interface IAgSearchResultCollection
+
+struct __declspec(uuid("d5ff6eaf-186a-4e30-8c63-5bd71efde2cf"))
+AgPluginSearchStatusGrid;
+    // [ default ] interface IAgPluginSearchStatusGrid
+
+#pragma pack(pop)
