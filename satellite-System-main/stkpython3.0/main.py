@@ -84,6 +84,7 @@ def main_2():
 
 if __name__ == '__main__':
 
+
     st = time.time()
     # 连接STK应用实例
     root = util.connect_STK_instance()
