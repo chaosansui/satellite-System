@@ -75,7 +75,7 @@ class STKProTutorial:
         self.rightFrame.pack(side=tk.LEFT, fill=tk.BOTH, expand=tk.YES)
 
         # 加载图像并展示在右侧区域
-        self.load_image('E:/img/air.jpg')
+        self.load_image('stkpython3.0/img/1.jpg')
 
         self.mainFrame.pack(fill=tk.BOTH, expand=tk.YES)
         self.window.mainloop()

@@ -14,6 +14,10 @@ facility_list = [{'name': '', 'latitude': 0, 'longitude': 0, 'altitude': 0},
                  ]
 # 卫星 列表
 
+
+
+
+
 satellite_list = [{'name': '', 'id': 111, 'path': ''},
                  ]
 
