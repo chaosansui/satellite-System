@@ -1,0 +1,82 @@
+event_index,event_type,start_time,end_time,duration,observer_index,target_index,task_index,level,param,class
+1,env_target_under_window_period,2024/4/25 4:00,2024/4/25 4:06,376,35,0,1,0,,env
+2,env_target_under_window_period,2024/4/25 4:00,2024/4/25 4:06,372,35,1,2,0,,env
+3,env_target_under_window_period,2024/4/25 4:00,2024/4/25 4:02,123,41,2,3,0,,env
+4,env_target_under_window_period,2024/4/25 4:00,2024/4/25 4:06,388,35,2,4,0,,env
+5,env_target_under_window_period,2024/4/25 4:00,2024/4/25 4:02,140,41,3,5,0,,env
+6,report_satellite_discovery,2024/4/25 4:01,None,None,41,3,5,0,,report
+7,report_satellite_discovery,2024/4/25 4:01,None,None,35,0,1,0,,report
+8,rule_assign_satellite_validation,2024/4/25 4:02,None,None,-1,3,5,0,[40; 40],rule
+9,report_satellite_discovery_miss,2024/4/25 4:02,None,None,41,2,3,0,,report
+10,satellite_single_validation,2024/4/25 4:02,2024/4/25 4:14,191,40,3,5,0,,action
+11,satellite_single_validation,2024/4/25 4:02,2024/4/25 4:14,181,40,3,5,0,,action
+12,rule_assign_satellite_validation,2024/4/25 4:02,None,None,-1,0,1,0,[40; 40],rule
+13,satellite_single_validation,2024/4/25 4:02,2024/4/25 4:14,181,40,0,1,0,,action
+14,satellite_single_validation,2024/4/25 4:02,2024/4/25 4:14,191,40,0,1,0,,action
+15,report_satellite_discovery,2024/4/25 4:03,None,None,35,1,2,0,,report
+16,rule_assign_satellite_validation,2024/4/25 4:03,None,None,-1,1,2,0,[40; 40],rule
+17,satellite_single_validation,2024/4/25 4:03,2024/4/25 4:14,181,40,1,2,0,,action
+18,satellite_single_validation,2024/4/25 4:03,2024/4/25 4:14,191,40,1,2,0,,action
+19,env_target_under_window_period,2024/4/25 4:04,2024/4/25 4:17,792,0,2,6,0,,env
+20,report_satellite_discovery_miss,2024/4/25 4:06,None,None,35,2,4,0,,report
+21,report_satellite_discovery,2024/4/25 4:07,None,None,0,2,6,0,,report
+22,rule_assign_satellite_validation,2024/4/25 4:07,None,None,-1,2,6,0,[40; 40],rule
+23,satellite_single_validation,2024/4/25 4:07,2024/4/25 4:14,191,40,2,6,0,,action
+24,satellite_single_validation,2024/4/25 4:07,2024/4/25 4:14,181,40,2,6,0,,action
+25,report_satellite_validation,2024/4/25 4:09,None,None,40,0,1,0,,report
+26,rule_assign_aircraft_reconnoitre,2024/4/25 4:11,None,None,-1,0,1,0,[0; 1],rule
+27,aircraft_arrival,2024/4/25 4:13,2024/4/25 4:11,0,0,0,1,0,,action
+28,report_satellite_validation,2024/4/25 4:13,None,None,40,1,2,0,,report
+29,report_satellite_validation_miss,2024/4/25 4:14,None,None,40,3,5,0,,report
+30,aircraft_arrival,2024/4/25 4:15,2024/4/25 4:11,0,1,0,1,0,,action
+31,rule_assign_aircraft_reconnoitre,2024/4/25 4:15,None,None,-1,1,2,0,[2; 3],rule
+32,aircraft_arrival,2024/4/25 4:18,2024/4/25 4:15,0,2,1,2,0,,action
+33,aircraft_arrival,2024/4/25 4:18,2024/4/25 4:15,0,3,1,2,0,,action
+34,report_satellite_validation,2024/4/25 4:26,None,None,40,1,2,0,,report
+35,rule_assign_aircraft_reconnoitre,2024/4/25 4:28,None,None,-1,1,2,0,[4; 5],rule
+36,aircraft_arrival,2024/4/25 4:31,2024/4/25 4:28,0,5,1,2,0,,action
+37,aircraft_arrival,2024/4/25 4:31,2024/4/25 4:28,0,4,1,2,0,,action
+38,report_satellite_validation,2024/4/25 4:33,None,None,40,0,1,0,,report
+39,rule_assign_aircraft_reconnoitre,2024/4/25 4:35,None,None,-1,0,1,0,[6; 7],rule
+40,aircraft_reconnoitre_complete,2024/4/25 4:35,2024/4/25 4:28,0,5,1,2,0,,action
+41,report_mission_over,2024/4/25 4:35,2024/4/25 4:28,0,5,1,2,0,information,report
+42,aircraft_arrival,2024/4/25 4:37,2024/4/25 4:35,0,7,0,1,0,,action
+43,aircraft_arrival,2024/4/25 4:37,2024/4/25 4:35,0,6,0,1,0,,action
+44,aircraft_reconnoitre_complete,2024/4/25 4:55,2024/4/25 4:15,0,2,1,2,0,,action
+45,report_mission_over,2024/4/25 4:55,2024/4/25 4:15,0,2,1,2,0,information,report
+46,report_satellite_validation,2024/4/25 4:57,None,None,40,2,6,0,,report
+47,rule_assign_aircraft_reconnoitre,2024/4/25 4:59,None,None,-1,2,6,0,[2; 5],rule
+48,aircraft_reconnoitre_complete,2024/4/25 5:00,2024/4/25 4:35,0,6,0,1,0,,action
+49,report_mission_over,2024/4/25 5:00,2024/4/25 4:35,0,6,0,1,0,information,report
+50,aircraft_reconnoitre_complete,2024/4/25 5:01,2024/4/25 4:15,0,3,1,2,0,,action
+51,report_mission_over,2024/4/25 5:01,2024/4/25 4:15,0,3,1,2,0,information,report
+52,aircraft_arrival,2024/4/25 5:03,2024/4/25 4:59,0,2,2,6,0,,action
+53,aircraft_arrival,2024/4/25 5:03,2024/4/25 4:59,0,5,2,6,0,,action
+54,aircraft_reconnoitre_complete,2024/4/25 5:09,2024/4/25 4:11,0,1,0,1,0,,action
+55,report_mission_over,2024/4/25 5:09,2024/4/25 4:11,0,1,0,1,0,information,report
+56,report_satellite_validation,2024/4/25 5:11,None,None,40,2,6,0,,report
+57,report_satellite_validation,2024/4/25 5:12,None,None,40,3,5,0,,report
+58,aircraft_arrival,2024/4/25 4:14,2024/4/25 5:13,0,0,3,5,0,,action
+59,aircraft_reconnoitre_complete,2024/4/25 4:44,2024/4/25 5:13,0,0,3,5,0,,action
+60,report_mission_over,2024/4/25 4:44,2024/4/25 5:13,0,0,3,5,0,information,report
+61,rule_assign_aircraft_reconnoitre,2024/4/25 5:13,None,None,-1,2,6,0,[1; 3],rule
+62,rule_assign_aircraft_reconnoitre,2024/4/25 5:13,None,None,-1,3,5,0,[6; 0],rule
+63,aircraft_arrival,2024/4/25 5:17,2024/4/25 5:13,0,6,3,5,0,,action
+64,aircraft_arrival,2024/4/25 5:17,2024/4/25 5:13,0,1,2,6,0,,action
+65,aircraft_arrival,2024/4/25 5:17,2024/4/25 5:13,0,3,2,6,0,,action
+66,aircraft_reconnoitre_complete,2024/4/25 5:23,2024/4/25 4:59,0,2,2,6,0,,action
+67,report_mission_over,2024/4/25 5:23,2024/4/25 4:59,0,2,2,6,0,information,report
+68,aircraft_reconnoitre_complete,2024/4/25 5:28,2024/4/25 4:28,0,4,1,2,0,,action
+69,report_mission_over,2024/4/25 5:29,2024/4/25 4:28,0,4,1,2,0,information,report
+70,aircraft_reconnoitre_complete,2024/4/25 5:37,2024/4/25 4:59,0,5,2,6,0,,action
+71,report_mission_over,2024/4/25 5:37,2024/4/25 4:59,0,5,2,6,0,information,report
+72,aircraft_reconnoitre_complete,2024/4/25 5:43,2024/4/25 4:11,0,0,0,1,0,,action
+73,report_mission_over,2024/4/25 5:43,2024/4/25 4:11,0,0,0,1,0,information,report
+74,aircraft_reconnoitre_complete,2024/4/25 5:52,2024/4/25 4:35,0,7,0,1,0,,action
+75,report_mission_over,2024/4/25 5:52,2024/4/25 4:35,0,7,0,1,0,information,report
+76,aircraft_reconnoitre_complete,2024/4/25 5:53,2024/4/25 5:13,0,6,3,5,0,,action
+77,report_mission_over,2024/4/25 5:53,2024/4/25 5:13,0,6,3,5,0,information,report
+78,aircraft_reconnoitre_complete,2024/4/25 6:35,2024/4/25 5:13,0,1,2,6,0,,action
+79,report_mission_over,2024/4/25 6:35,2024/4/25 5:13,0,1,2,6,0,information,report
+80,aircraft_reconnoitre_complete,2024/4/25 6:40,2024/4/25 5:13,0,3,2,6,0,,action
+81,report_mission_over,2024/4/25 6:40,2024/4/25 5:13,0,3,2,6,0,information,report
