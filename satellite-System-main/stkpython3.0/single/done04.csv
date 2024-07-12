@@ -1,0 +1,15 @@
+event_index,event_type,start_time,end_time,duration,observer_index,target_index,task_index,level,param,class
+1,env_target_under_window_period,2024/4/25 4:00,2024/4/25 4:07,465,1,0,1,0,,env
+2,report_satellite_discovery,2024/4/25 4:04,None,None,1,0,1,0,,report
+3,rule_assign_satellite_validation,2024/4/25 4:04,None,None,-1,0,1,0,[61; 60],rule
+4,satellite_single_validation,2024/4/25 4:04,2024/4/25 4:14,191,60,0,1,0,,action
+5,satellite_single_validation,2024/4/25 4:04,2024/4/25 4:07,6,61,0,1,0,,action
+6,report_satellite_validation_miss,2024/4/25 4:14,None,None,60,0,1,0,,report
+7,report_satellite_validation,2024/4/25 4:22,None,None,61,0,1,0,,report
+8,rule_assign_aircraft_reconnoitre,2024/4/25 4:24,None,None,-1,0,1,0,[0; 1],rule
+9,aircraft_arrival,2024/4/25 4:27,2024/4/25 4:24,0,0,0,1,0,,action
+10,aircraft_arrival,2024/4/25 4:27,2024/4/25 4:24,0,1,0,1,0,,action
+11,aircraft_reconnoitre_complete,2024/4/25 5:06,2024/4/25 4:24,0,0,0,1,0,,action
+12,report_mission_over,2024/4/25 5:06,2024/4/25 4:24,0,0,0,1,0,information,report
+13,aircraft_reconnoitre_complete,2024/4/25 5:56,2024/4/25 4:24,0,1,0,1,0,,action
+14,report_mission_over,2024/4/25 5:56,2024/4/25 4:24,0,1,0,1,0,information,report
