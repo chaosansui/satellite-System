@@ -28,7 +28,7 @@ scenario_path = f'{scenario_name}/{scenario_name}.sc'
 scenario_path_absolute = stk_project_dir + scenario_path
 
 # 本项目绝对路径
-project_dir = 'C:/Users/David205x/Documents/PyCharm Project/pythonProject/'
+project_dir = 'C:/Users/16118/Desktop/satellite-System-main/satellite-System-main/stkpython3.0'
 # 卫星tle文件相对路径
 tle_path = 'asset/yaogan.txt'
 # 卫星tle文件绝对路径
